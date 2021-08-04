@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class HtlwredApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HtlwredApplication.class, args);}
-
+		SpringApplication.run(HtlwredApplication.class, args);
 	}
+
+}
