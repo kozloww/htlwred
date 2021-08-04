@@ -1,1 +1,1 @@
-insert into person values (1, 'Test', 'Tester', '2000-01-01');
+insert into person values (1, 'Test', 'Tester', '2004-03-20');
