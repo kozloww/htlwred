@@ -5,5 +5,5 @@ create table person
    id integer not null primary key,
    name varchar,
    last_name varchar,
-   birthdate date
+   birth_date date
 )
