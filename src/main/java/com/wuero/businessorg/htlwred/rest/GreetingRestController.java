@@ -30,12 +30,23 @@ public class GreetingRestController {
     }
 
     @DeleteMapping("persons/{id}")
-    public void deletePerson(@PathVariable int id){
+    public void deletePerson(@PathVariable int id) {
         personRepository.deleteById(id);
     }
 
     @PutMapping("persons")
-    public Person putPerson(@RequestBody Person updatedPerson){
+    public Person putPerson(@RequestBody Person updatedPerson) {
         return personRepository.save(updatedPerson);
+    }
+
+    @GetMapping("persons")
+    public List<Person> getPersons() {
+        var persons = new ArrayList<Person>();
+        for (Person person : personRepository.findAll())
+        {
+            persons.add(person);
+
+        }
+        return persons;
     }
 }
